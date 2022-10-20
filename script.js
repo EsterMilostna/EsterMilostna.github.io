@@ -49,5 +49,8 @@ function on() {
   
  var box=document.getElementByID("box1");
 var touchController=new SwipeElementItem(box1);
+  if (/iP(hone|ad)/.test(window.navigator.userAgent)) {
+    document.body.addEventListener('touchstart', function() {}, false);
+  }
 
   
