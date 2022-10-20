@@ -1,2 +1,0 @@
-# EsterMilostna.github.io
-website
