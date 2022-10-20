@@ -75,4 +75,33 @@ function on() {
     })
     
   }
+  function beTouchend (event) {
+    // current box position.
+    var x = parseInt(event.target.style.left);
+    var y = parseInt(event.target.style.top);
+  }
+function beTouchmove (event) {
+    // grab the location of touch
+    var touchLocation = event.targetTouches[0];
+    
+    // assign box new coordinates based on the touch.
+    event.target.style.left = touchLocation.pageX + 'px';
+    event.target.style.top = touchLocation.pageY + 'px';
+  }
+window.onload = function() {
+  // find the element that you want to drag.
+  var box1 = document.getElementById('box1');
+  box1.addEventListener('touchmove', beTouchmove );
+  box1.addEventListener('touchend', beTouchend );
+  var box2 = document.getElementById('box2');
+  box2.addEventListener('touchmove', beTouchmove );
+  box2.addEventListener('touchend', beTouchend );
+  var box3 = document.getElementById('box3');
+  box3.addEventListener('touchmove', beTouchmove );
+  box3.addEventListener('touchend', beTouchend );
+  var box4 = document.getElementById('box4');
+  box4.addEventListener('touchmove', beTouchmove );
+  box4.addEventListener('touchend', beTouchend );
+}
+
   

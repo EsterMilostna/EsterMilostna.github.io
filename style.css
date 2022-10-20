@@ -50,3 +50,25 @@ html, body {
     cursor: pointer;
     display: block;
   }
+  .box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+ 
+  }
+#box1 {
+  background-image: url("https://iili.io/tcS6ib.jpg");
+}  
+#box2 {
+  background-image: url("https://iili.io/tcSifj.jpg");
+}  
+#box3 {
+  background-image: url("https://iili.io/tcSZJV.jpg");
+}  
+#box4 {
+  background-image: url("https://iili.io/tcSt5B.jpg");
+} 
+
+#s1img {
+    width: 70%;
+}
