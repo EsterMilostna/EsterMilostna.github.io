@@ -47,61 +47,7 @@ function on() {
   document.querySelector("#s1").addEventListener("click", varHeslo);
   document.querySelector("#s2").addEventListener("click", varHeslo);
   
-  window.onload = function() {
-    // find the element that you want to drag.
-    var box = document.getElementById('box');
-    
-    /* listen to the touchMove event,
-    every time it fires, grab the location
-    of touch and assign it to box */
-    
-    box.addEventListener('touchmove', function(e) {
-      // grab the location of touch
-      var touchLocation = e.targetTouches[0];
-      
-      // assign box new coordinates based on the touch.
-      box.style.left = touchLocation.pageX + 'px';
-      box.style.top = touchLocation.pageY + 'px';
-    })
-    
-    /* record the position of the touch
-    when released using touchend event.
-    This will be the drop position. */
-    
-    box.addEventListener('touchend', function(e) {
-      // current box position.
-      var x = parseInt(box.style.left);
-      var y = parseInt(box.style.top);
-    })
-    
-  }
-  function beTouchend (event) {
-    // current box position.
-    var x = parseInt(event.target.style.left);
-    var y = parseInt(event.target.style.top);
-  }
-function beTouchmove (event) {
-    // grab the location of touch
-    var touchLocation = event.targetTouches[0];
-    
-    // assign box new coordinates based on the touch.
-    event.target.style.left = touchLocation.pageX + 'px';
-    event.target.style.top = touchLocation.pageY + 'px';
-  }
-window.onload = function() {
-  // find the element that you want to drag.
-  var box1 = document.getElementById('box1');
-  box1.addEventListener('touchmove', beTouchmove );
-  box1.addEventListener('touchend', beTouchend );
-  var box2 = document.getElementById('box2');
-  box2.addEventListener('touchmove', beTouchmove );
-  box2.addEventListener('touchend', beTouchend );
-  var box3 = document.getElementById('box3');
-  box3.addEventListener('touchmove', beTouchmove );
-  box3.addEventListener('touchend', beTouchend );
-  var box4 = document.getElementById('box4');
-  box4.addEventListener('touchmove', beTouchmove );
-  box4.addEventListener('touchend', beTouchend );
-}
+ var box=document.getElementByID("box1");
+var touchController=new SwipeElementItem(box1);
 
   
