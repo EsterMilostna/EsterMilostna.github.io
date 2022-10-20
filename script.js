@@ -52,9 +52,9 @@ function on() {
   
  var box1=document.getElementByID("box1");
 var touchController=new SwipeElementItem(box1);
- var box2=document.getElementByID("box2");
-var touchController=new SwipeElementItem(box2);
- var box3=document.getElementByID("box3");
-var touchController=new SwipeElementItem(box3);
- var box4=document.getElementByID("box4");
-var touchController=new SwipeElementItem(box4);
+// var box2=document.getElementByID("box2");
+//var touchController=new SwipeElementItem(box2);
+// var box3=document.getElementByID("box3");
+//var touchController=new SwipeElementItem(box3);
+ //var box4=document.getElementByID("box4");
+//var touchController=new SwipeElementItem(box4);
